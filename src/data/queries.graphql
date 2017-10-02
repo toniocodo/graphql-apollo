@@ -1,0 +1,21 @@
+query AllLinks {
+    allLinks {
+        url
+        description
+        postedBy {
+            name
+        }
+        votes {
+            user {
+                name
+            }
+        }
+    }
+}
+
+query AllUsers {
+    allUsers {
+        name
+        email
+    }
+}

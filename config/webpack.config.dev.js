@@ -124,6 +124,12 @@ module.exports = {
         ],
         include: paths.appSrc,
       },
+      // Graphql-tag loader
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: 'graphql-tag/loader'
+      },
       {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall

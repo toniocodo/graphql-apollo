@@ -1,0 +1,11 @@
+fragment linkfields on Link {
+    id
+    url
+    description
+}
+
+fragment userFields on User {
+    id
+    name
+    email
+}
